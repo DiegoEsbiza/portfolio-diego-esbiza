@@ -212,8 +212,8 @@ p{
 /* *** *** Utilities *** *** */
 
 .aptitudes-logos{
-    width: 15vw;
-    height: 15vh;
+    width: 25vw;
+    height: 25vh;
 }
 
 .bg-gray-light{
@@ -267,8 +267,18 @@ p{
 .text-right{
     text-align: right;
 }
+@media screen and (min-width: 768px){
+    .aptitudes-logos{
+        width: 15vw;
+        height: 15vh;
+    }
+}
 
 @media screen and (min-width: 1024px){    
+    .aptitudes-logos{
+        width: 15vw;
+        height: 15vh;
+    }
     .full-lg-screen{
         width: 100%;
         min-height: 100vh;
@@ -322,6 +332,14 @@ p{
     text-decoration: none;
 }
 
+.skills-logos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-content: center;
+}
+
 @media screen and (min-width: 768px){
     .about-name{
         font-size: 3.3vw;
@@ -329,6 +347,21 @@ p{
     
     .about-title{
         font-size: 6vw;
+    }
+
+    .skills > .container{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        justify-content: space-between;
+        align-content: center;
+        padding: 2rem;
+    }
+
+    .skills .section-title{
+        grid-column: span 2;
+    }
+    .skills .section-subtitle{
+        grid-column: span 2;
     }
 }
 
@@ -360,7 +393,16 @@ p{
         height: calc(var(--header-hight) - .5rem);
     }
 
-    .skills{
-        align-content: center;
+    .skills > .container{        
+        grid-template-columns: repeat(3, 30%);        
+        padding: 2rem;
     }
+
+    .skills .section-title{
+        grid-column: span 3;
+    }
+    .skills .section-subtitle{
+        grid-column: span 3;
+    }
+
 }
