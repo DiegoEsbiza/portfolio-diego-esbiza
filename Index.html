@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <header class="header">                
+        <section class="container">
+            <div class="logo">
+                <a href="Index.html">Diego Esbiza</a>
+            </div>
+            <button class="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/></svg>
+                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/></svg>
+            </button>
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre">Sobre mi</a>
+                <a href="#aptitudes">Aptitudes</a>
+                <a href="#cursos">Cursos realizados</a>
+                <a href="#portfolio">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </section>      
+    </header>
+    
+    <section id="inicio" class="home">                
+        <article class="hero-image" style="--hero-image: url(assets/wallpaper.jpg); --hero-attachment: fixed;">
+            <aside class="hero-image-opacity" style="--opacity-color: var(--black-alpha-color)">
+                <div class="hero-image-content">
+                    <h2 class="hero-image-title" style="--hero-text-color: var(--white-color)">
+                        Bienvenidos
+                    </h2>
+                    <h3 class="hero-image-subtitle" style="--hero-text-color: var(--white-color)">Soy Diego Esbiza, programador <i>backend</i> en formación</h3>
+                    <a href="https://www.linkedin.com/in/diego-esbiza/">Linkedin</a>
+                </div>                
+            </aside>               
+        </article>
+    </section>
+
+    <section id="sobre" class="about section container full-lg-screen">
+        <arcticle>
+            <h2 class="about-title text-center">Sobre mi</h2>
+            <aside class="text-center text-lg-left">
+            </aside>
+        </arcticle>
+        <arcticle class="about-description text-center">
+            <div class="text-lg-right">
+                <h1 class="about-name">Diego Esbiza</h1>                
+                <p>Estudiante de desarrollo de <i>software</i>, aprendiendo a través de cursos y autoformación, 
+                    con el objetivo claro de construir una carrera en tecnología como desarrollador <i>Backend</i>.</p>
+                <p>Actualmente trabajo de manera independiente, produciendo y vendiendo bebidas artesanales en 
+                    ferias y eventos, lo que me permite desarrollar habilidades de trato al público y gestión 
+                    comercial.</p>
+            </div>
+            <aside class="text-center">
+                <img class="gray-scale" src="assets/foto.jpg" alt="Diego Esbiza">            
+            </aside>
+            <div class="text-lg-left">
+                <h3 class="about-name">Objetivos:</h2>
+                <p>Aportar mis habilidades en un equipo como <i>Backend Developer Trainee/Junior</i> y crecer 
+                    profesionalmente en el desarrollo de <i>software</i>.</p>
+                <p>Comenzar la Tecnicatura en Programación en la UTN el próximo año para profundizar 
+                    mis conocimientos y consolidar mi perfil como desarrollador <i>backend</i>.</p>                
+            </div>
+        </arcticle>
+        <div class="text-center section">
+            <a class="btn" href="https://drive.google.com/file/d/1Re1RoKriHA2n5rrKKyMqJy50wIkqvxXx/view?usp=sharing" target="_blank" rel="noopener">DESCARGAR CV</a>
+        </div>
+        
+    </section>
+
+    <section id="aptitudes" class="skills text-lg-left full-lg-screen bg-gray-light">
+        <div class="container text-center ">
+            <h2>Aptitudes</h2>
+            <p>Estas son algunas de las tecnologías de las que tengo conocimientos:</p>
+            <img class="aptitudes-logos" src="assets/C_sharp_logo.svg" alt="C#">
+            <img class="aptitudes-logos" src="assets/NET_logo.svg" alt=".NET">
+            <img class="aptitudes-logos" src="assets/Sql_server_logo.svg" alt="SQL Server">
+            <img class="aptitudes-logos" src="assets/HTML5_logo.svg" alt="HTML5">
+            <img class="aptitudes-logos" src="assets/CSS3_logo.svg" alt="CSS3">
+            <img class="aptitudes-logos" src="assets/Javascript_logo.svg" alt="Javascript">
+        </div>
+    </section>
+
+    <section id="cursos" class="courses container">
+        <h2>Cursos realizados</h2>
+    </section>
+
+    <section id="portfolio" class="portfolio container">
+        <h2>Proyectos</h2>
+    </section>
+
+    <section id="contacto" class="contact container">
+        <h2>Contacto</h2>
+    </section>
+    
+    <footer>
+        <small>Sitio construido por Diego Esbiza, 2024</small>
+    </footer>    
+    <script src= "script.js"></script>
+</body>
+</html>
