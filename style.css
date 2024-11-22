@@ -334,14 +334,16 @@ p{
 
 .portfolio-card{
     position: relative;
-    width: 80vw;
+    width: 84vw;
+    height: auto;
     margin: 0 auto;
     display: block;
 }
 
 .portfolio-card img{
-    width: 80vh;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
     object-fit: cover;
 }
 
@@ -349,13 +351,14 @@ p{
     position: absolute;
     top: 0;
     left: 0;
-    width: 80vh;
-    height: 80vh;
-    padding: 1rem;
+    width: 100%;
+    height: 91%;
+    margin-top: 1rem;
     background-color: var(--first-alpha-color);
     color: var(--white-color);
     opacity: 0;
     pointer-events: none;
+    text-size-adjust: auto;
 }
 
 .portfolio-card:hover .portfolio-card-info{
@@ -363,18 +366,19 @@ p{
     pointer-events: auto;
 }
 
-.portfolio-card-info > div{
+/* .portfolio-card-info > div{
     padding: 1rem;
     border: thin solid var(--white-color);
-    width: 100%;
-    height: 100%;
-}
+    width: 90%;
+    height: 90%;
+    overflow: hidden; 
+}*/
 
 .skills-logos{
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem auto;
-    padding: 1rem;
+    margin: .3rem auto;
+    padding: .3rem;
     justify-content: center;
 }
 
