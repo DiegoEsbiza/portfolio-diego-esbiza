@@ -270,7 +270,7 @@ p{
 @media screen and (min-width: 768px){
     .aptitudes-logos{
         width: 15vw;
-        height: 15vh;
+        height: 15vh;   
     }
 }
 
@@ -366,14 +366,6 @@ p{
     pointer-events: auto;
 }
 
-/* .portfolio-card-info > div{
-    padding: 1rem;
-    border: thin solid var(--white-color);
-    width: 90%;
-    height: 90%;
-    overflow: hidden; 
-}*/
-
 .skills-logos{
     display: flex;
     flex-wrap: wrap;
@@ -389,6 +381,35 @@ p{
     
     .about-title{
         font-size: 6vw;
+    }
+
+    .portfolio-card{
+        margin-top: 1.5rem;
+    }
+
+    .portfolio-card img{
+        width: 50%;
+        height: 100%;
+        margin-top: 1rem;
+        object-fit: cover;
+    }
+
+    .portfolio-card-info{
+        width: 50%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+
+    .portfolio > .container{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-content: space-between;
+        align-content: center;
+        padding: 2rem;
+    }
+
+    .portfolio .section-title{
+        grid-column: span 2;
     }
 
     .skills > .container{
@@ -425,7 +446,7 @@ p{
     }
     
     .about-title{
-        font-size: 3.3vw;
+        font-size: 3vw;
     }
     
     .header{
@@ -433,6 +454,30 @@ p{
         top: 0;
         padding: .5rem;
         height: calc(var(--header-hight) - .5rem);
+    }
+
+    .portfolio > .container{
+        grid-template-columns: repeat(3, 30%);        
+        padding: 2rem;
+    }
+    
+    .portfolio-card img{
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: 100%;
+        margin-top: .5rem;        
+    }
+
+    .portfolio-card-info{       
+        width: 35%;
+        height: 100%;
+        margin-top: .5rem;    
+        justify-content: center;   
+        align-content: center; 
+    }
+    .portfolio .section-title{
+        grid-column: span 3;
     }
 
     .skills > .container{        
