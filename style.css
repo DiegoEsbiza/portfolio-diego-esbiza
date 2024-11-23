@@ -135,6 +135,44 @@ p{
     }
 }
 
+/* ******* Modal ******* */
+.modal{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-alpha-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.modal-content{
+    position: relative;
+}
+
+.modal-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal-close > svg{
+    width: 3rem;
+    height: 3rem;
+    fill: var(--second-color);
+}
+
+.modal[id|="trabajo"]:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* ******* Menu ******* */
 .menu-btn{
     outline: thin solid var(--first-color);
@@ -359,6 +397,7 @@ p{
     opacity: 0;
     pointer-events: none;
     text-size-adjust: auto;
+    transition: all 0.5s ease-in-out;
 }
 
 .portfolio-card:hover .portfolio-card-info{
@@ -406,6 +445,13 @@ p{
         justify-content: space-between;
         align-content: center;
         padding: 2rem;
+    }
+
+    .portfolio-modal img{
+        width: 50%;
+        height: 100%;
+        margin-top: 1rem;
+        object-fit: cover;
     }
 
     .portfolio .section-title{
