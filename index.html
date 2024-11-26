@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <section id="cursos" class="courses">
+    <section id="cursos" class="courses full-lg-screen">
         <article class="hero-image">
             <aside class="hero-image-opacity" style="--opacity-color: var(--white-alpha-color)">
                 <div class="hero-image-content">
@@ -343,10 +343,28 @@
         </div>
     </arcticle>
 
-    <section id="contacto" class="contact container">
-        <h2>Contacto</h2>
-        <a href="https://www.linkedin.com/in/diego-esbiza/">Linkedin</a>
-        <a href="https://github.com/DiegoEsbiza">Github</a>
+    <section id="contacto" class="contact-container section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <a href="https://www.linkedin.com/in/diego-esbiza/">Linkedin</a>
+            <a href="https://github.com/DiegoEsbiza">Github</a>
+            <form class="contact-form box-shadow-1">
+                <input type="text" name="name" placeholder="Ingrese su nombre*" title="Sólo letras y espacios, por favor" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                <input type="email" name="email" placeholder="Ingrese su correo*" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <textarea name="comments" cols="50" rows="10" placeholder="Déjame un comentario*" required></textarea>
+                <div class="contact-form-loader"></div>
+                <img src="assets/loader.svg" alt="Enviando">
+                <input type="submit" class="btn" value="Enviar mensaje">
+            </form>
+            <arcticle id="gracias" class="modal">
+                <div class="modal-content">
+                    <aside class="redes"></aside>
+                    <arcticle class="contact-form-response">
+                        <h3>¡Muchas gracias por tu tiempo!</h3>
+                    </arcticle>
+                </div>
+            </arcticle>
+        </div>
     </section>
     
     <footer>
