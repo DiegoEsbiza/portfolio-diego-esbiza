@@ -1,6 +1,6 @@
 /* *** Custom Properties *** */
 :root{
-    --first-color: rgb(75, 75, 75);
+    --first-color: rgb(85, 85, 85);
     --first-alpha-color:  rgba(85,85,85,0.75);
     --second-color: rgb(0,0,0);
     --second-alpha-color: rgba(0,0,0,0.75);
@@ -95,6 +95,7 @@ p{
     margin: 2rem auto;
     padding: 2rem auto;
     background-color: var(--carrousel-bg-color);
+    max-width: 100vw;
     overflow-x: hidden;
 }
 
@@ -119,6 +120,11 @@ p{
     display: inline-block;
     width: .75rem;
     height: .75rem;
+}
+
+.slide{
+    width: 100%;  
+    height: 100%;  
 }
 
 #slides-1:checked ~ .slides {
@@ -146,11 +152,11 @@ p{
     transform: translateX(-80%);
 }
 
-#slides-1:checked ~ .slides-nav label#dot1,
-#slides-2:checked ~ .slides-nav label#dot2,
-#slides-3:checked ~ .slides-nav label#dot3,
-#slides-4:checked ~ .slides-nav label#dot4,
-#slides-5:checked ~ .slides-nav label#dot5{
+#slides-1:checked ~ .slides-nav label#dot-1,
+#slides-2:checked ~ .slides-nav label#dot-2,
+#slides-3:checked ~ .slides-nav label#dot-3,
+#slides-4:checked ~ .slides-nav label#dot-4,
+#slides-5:checked ~ .slides-nav label#dot-5{
     background-color: var(--gray-dark-color);
 }
 
@@ -196,6 +202,10 @@ p{
 }
 
 @media screen and (min-width: 1024px){
+    .carrousel {
+        max-width: 800px;
+    }
+
     .hero-image-subtitle{
         font-size: 1.70vw;
     }
@@ -318,6 +328,13 @@ p{
 .aptitudes-logos{
     width: 25vw;
     height: 25vh;
+}
+
+.avatar{
+    width: 70%;
+    height: 70%;
+    margin-top: 1rem;
+    object-fit: cover;
 }
 
 .bg-gray-light{
