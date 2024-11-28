@@ -160,7 +160,100 @@ p{
     background-color: var(--gray-dark-color);
 }
 
+.contact-form{
+    /* margin: 2rem auto; */
+    margin: .5rem;
+    padding: 1rem;
+    width: 75vw;
+    align-items: center;
+}
 
+.contact-form >*{
+    padding: .5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea{
+    font-size: .85rem;
+    font-family: var(--font);
+}
+
+.contact-form input{
+    border: 0;
+    padding-left: 0;
+    border-bottom: thin solid var(--gray-dark-color);
+}
+
+.contact-form textarea{
+    border: thin solid var(--gray-dark-color);
+    resize: none;
+}
+
+.contact-form input[type= "submit"]{
+    margin-top: 0;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.contact-form input[type= "submit"]:hover{
+    opacity: 0.75;
+}
+
+.contact-form *::placeholder{
+    color: var(--gray-dark-color);
+}
+
+.contact-form-response{
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    background-color: var(--white-color);
+}
+
+.contact-form .btn{
+    text-align: center;
+}
+
+.modal#gracias:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media screen and (min-width: 768px){
+    .contact-form{
+        /* margin: 2rem auto; */
+        margin: 2rem auto;      
+        max-width: 800px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea{
+    font-size: 1rem;
+    }
+
+    .contact-form textarea
+    .contact-form-loader{
+        grid-column: span 2;
+    }
+
+    .contact-form input[type= "submit"]{
+        margin-left: 0;
+    }
+}
+
+.contact-form textarea{
+    grid-column: span 2;
+}
 
 /* ******* Heroimage ******* */
 
@@ -624,15 +717,15 @@ p{
     .portfolio-card img{
         top: 0;
         left: 0;
-        width: 35%;
+        width: 32.5%;
         height: 100%;
-        margin-top: .5rem;        
+        margin-top: .1rem;        
     }
 
     .portfolio-card-info{       
-        width: 35%;
+        width: 32.5%;
         height: 100%;
-        margin-top: .5rem;    
+        margin-top: .1rem;    
         justify-content: center;   
         align-content: center; 
     }
