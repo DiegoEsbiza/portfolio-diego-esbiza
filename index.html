@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Diego Esbiza</title>
+    <meta name="description" content="Bienvenidos a mi portfolio, soy Diego Esbiza, desarrollador web">
+    <link rel="canonical" href="https://diegoesbiza.github.io/portfolio-diego-esbiza/portfolio-diego-esbiza">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="favicon" href="https://diegoesbiza.github.io/portfolio-diego-esbiza/portfolio-diego-esbiza/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="https://diegoesbiza.github.io/portfolio-diego-esbiza/portfolio-diego-esbiza/assets/favicon.ico">
+    <meta name="theme-color" content="#509ee3">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta property="og:title" name="twitter:title" content="Portfolio - Diego Esbiza">
+    <meta property="og:image"  name="twitter:image" content="https://diegoesbiza.github.io/portfolio-diego-esbiza/portfolio-diego-esbiza/assets/wallpaper.jpg">
+    <meta property="og:url" name="twitter:url" content="https://diegoesbiza.github.io/portfolio-diego-esbiza/portfolio-diego-esbiza">
+    <meta property="og:description" name="twitter:description" content="Bienvenidos a mi portfolio, soy Diego Esbiza, desarrollador web">
 </head>
 <body>    
     <header class="header">                
@@ -107,7 +118,7 @@
             <aside class="hero-image-opacity" style="--opacity-color: var(--white-alpha-color)">
                 <div class="hero-image-content">
                     <div class="container">
-                        <h2>Cursos realizados</h2>
+                        <h2 class="section-title">Cursos realizados</h2>
                         <article class="carrousel" style="--carrousel-bg-color: var(--gray-color)">
                             <input type="radio" name="slides" id="slides-1" checked>
                             <input type="radio" name="slides" id="slides-2">
@@ -343,9 +354,9 @@
         </div>
     </arcticle>
 
-    <section id="contacto" class="contact-container section">
-        <h2 class="section-title text-center text-lg-center">Contacto</h2>
+    <section id="contacto" class="contact-container section full-lg-screen">
         <div class="container box-shadow-1">
+            <h2 class="section-title text-center">Contacto</h2>
             <form class="contact-form box-shadow-1">                
                 <input type="text" name="name" placeholder="Ingrese su nombre*" title="Sólo letras y espacios, por favor" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                 <input type="email" name="email" placeholder="Ingrese su correo*" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
@@ -358,14 +369,14 @@
             <arcticle id="gracias" class="modal">
                 <div class="modal-content">                   
                     <arcticle class="contact-form-response">
-                        <h3>¡Muchas gracias por tu tiempo!</h3>
+                        <h2>¡Muchas gracias por tu tiempo!</h2>
                     </arcticle>
                 </div>
             </arcticle>
         </div>
     </section>
     
-    <footer>
+    <footer class="footer section">
         <aside class="redes text-center">
             <small class="redes">
                 <a href="https://www.linkedin.com/in/diego-esbiza/" target="_blank" rel="noopener">
