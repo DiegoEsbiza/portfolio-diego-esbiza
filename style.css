@@ -165,8 +165,13 @@ p{
     background-color: var(--gray-dark-color);
 }
 
+.contact-container aside{
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
 .contact-container h2{
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 
 .contact-form{
@@ -227,6 +232,11 @@ p{
 .modal#gracias:target{
     opacity: 1;
     pointer-events: auto;
+}
+
+.redes svg{
+    width: 3.5%;
+    height: auto;
 }
 
 @media screen and (min-width: 768px){
